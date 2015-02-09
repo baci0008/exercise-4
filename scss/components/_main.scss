@@ -31,8 +31,9 @@ body {
   left: 50%;
   margin: 90px 0;
   transform: translate(-50%, 0);
-  box-shadow: 0 10px 0 0 $black inset;
+  box-shadow: 0 10px 0 0 $dark-grey inset;
   background-color: $grey;
+  border-radius: 25px;
   max-width: 450px;
   padding: 30px;
 }
@@ -83,6 +84,10 @@ p {
   transform: translate(0, 0);
   margin-top: 14px;
   z-index: 2;
+}
+
+img {
+	margin-bottom:2rem;
 }
 
 ul {

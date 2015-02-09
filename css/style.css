@@ -36,13 +36,14 @@ body {
   -webkit-transform: translate(-50%, 0);
       -ms-transform: translate(-50%, 0);
           transform: translate(-50%, 0);
-  box-shadow: 0 10px 0 0 #000 inset;
+  box-shadow: 0 10px 0 0 #D3D3D3 inset;
   background-color: #F0F0F0;
+  border-radius: 25px;
   max-width: 450px;
   padding: 30px; }
 
 @media (max-width: 550px) {
-  /* line 40, /Users/thaliamina/Documents/exercise-4/scss/components/main */
+  /* line 41, /Users/thaliamina/Documents/exercise-4/scss/components/main */
   body {
     box-sizing: border-box;
     -webkit-transform: translate(0, 0);
@@ -54,11 +55,11 @@ body {
     left: 0; }
  }
 
-/* line 50, /Users/thaliamina/Documents/exercise-4/scss/components/main */
+/* line 51, /Users/thaliamina/Documents/exercise-4/scss/components/main */
 h1, h2 {
   font-family: 'Open Sans Condensed', sans-serif; }
 
-/* line 54, /Users/thaliamina/Documents/exercise-4/scss/components/main */
+/* line 55, /Users/thaliamina/Documents/exercise-4/scss/components/main */
 h1 {
   color: #00bbbb;
   text-transform: uppercase;
@@ -66,7 +67,7 @@ h1 {
   line-height: 42px;
   letter-spacing: 3px; }
 
-/* line 62, /Users/thaliamina/Documents/exercise-4/scss/components/main */
+/* line 63, /Users/thaliamina/Documents/exercise-4/scss/components/main */
 h2 {
   color: #000;
   font-size: 30px;
@@ -77,7 +78,7 @@ h2 {
   margin: 0;
   cursor: pointer; }
 
-/* line 73, /Users/thaliamina/Documents/exercise-4/scss/components/main */
+/* line 74, /Users/thaliamina/Documents/exercise-4/scss/components/main */
 p {
   color: #00bbbb;
   font-family: 'Raleway', sans-serif;
@@ -94,7 +95,11 @@ p {
   margin-top: 14px;
   z-index: 2; }
 
-/* line 88, /Users/thaliamina/Documents/exercise-4/scss/components/main */
+/* line 89, /Users/thaliamina/Documents/exercise-4/scss/components/main */
+img {
+  margin-bottom: 2rem; }
+
+/* line 93, /Users/thaliamina/Documents/exercise-4/scss/components/main */
 ul {
   list-style: none;
   -webkit-perspective: 900;
@@ -102,7 +107,7 @@ ul {
   padding: 0;
   margin: 0; }
 
-/* line 94, /Users/thaliamina/Documents/exercise-4/scss/components/main */
+/* line 99, /Users/thaliamina/Documents/exercise-4/scss/components/main */
 ul li {
   position: relative;
   padding: 0;
@@ -111,26 +116,26 @@ ul li {
   padding-top: 18px;
   border-top: 7px dotted #D3D3D3; }
 
-/* line 102, /Users/thaliamina/Documents/exercise-4/scss/components/main */
+/* line 107, /Users/thaliamina/Documents/exercise-4/scss/components/main */
 ul li:nth-of-type(1) {
   -webkit-animation-delay: 0.5s;
           animation-delay: 0.5s; }
 
-/* line 105, /Users/thaliamina/Documents/exercise-4/scss/components/main */
+/* line 110, /Users/thaliamina/Documents/exercise-4/scss/components/main */
 ul li:nth-of-type(2) {
   -webkit-animation-delay: 0.75s;
           animation-delay: 0.75s; }
 
-/* line 108, /Users/thaliamina/Documents/exercise-4/scss/components/main */
+/* line 113, /Users/thaliamina/Documents/exercise-4/scss/components/main */
 ul li:nth-of-type(3) {
   -webkit-animation-delay: 1s;
           animation-delay: 1s; }
 
-/* line 111, /Users/thaliamina/Documents/exercise-4/scss/components/main */
+/* line 116, /Users/thaliamina/Documents/exercise-4/scss/components/main */
 ul li:last-of-type {
   padding-bottom: 0; }
 
-/* line 114, /Users/thaliamina/Documents/exercise-4/scss/components/main */
+/* line 119, /Users/thaliamina/Documents/exercise-4/scss/components/main */
 ul li i {
   position: absolute;
   -webkit-transform: translate(-6px, 0);
@@ -139,7 +144,7 @@ ul li i {
   margin-top: 16px;
   right: 0; }
 
-/* line 120, /Users/thaliamina/Documents/exercise-4/scss/components/main */
+/* line 125, /Users/thaliamina/Documents/exercise-4/scss/components/main */
 ul li i:before, ul li i:after {
   content: "";
   position: absolute;
@@ -147,19 +152,19 @@ ul li i:before, ul li i:after {
   width: 3px;
   height: 9px; }
 
-/* line 127, /Users/thaliamina/Documents/exercise-4/scss/components/main */
+/* line 132, /Users/thaliamina/Documents/exercise-4/scss/components/main */
 ul li i:before {
   -webkit-transform: translate(-2px, 0) rotate(45deg);
       -ms-transform: translate(-2px, 0) rotate(45deg);
           transform: translate(-2px, 0) rotate(45deg); }
 
-/* line 130, /Users/thaliamina/Documents/exercise-4/scss/components/main */
+/* line 135, /Users/thaliamina/Documents/exercise-4/scss/components/main */
 ul li i:after {
   -webkit-transform: translate(2px, 0) rotate(-45deg);
       -ms-transform: translate(2px, 0) rotate(-45deg);
           transform: translate(2px, 0) rotate(-45deg); }
 
-/* line 133, /Users/thaliamina/Documents/exercise-4/scss/components/main */
+/* line 138, /Users/thaliamina/Documents/exercise-4/scss/components/main */
 ul li input[type=checkbox] {
   position: absolute;
   cursor: pointer;
@@ -168,7 +173,7 @@ ul li input[type=checkbox] {
   z-index: 1;
   opacity: 0; }
 
-/* line 141, /Users/thaliamina/Documents/exercise-4/scss/components/main */
+/* line 146, /Users/thaliamina/Documents/exercise-4/scss/components/main */
 ul li input[type=checkbox]:checked ~ p {
   margin-top: 0;
   max-height: 0;
@@ -177,20 +182,20 @@ ul li input[type=checkbox]:checked ~ p {
       -ms-transform: translate(0, 50%);
           transform: translate(0, 50%); }
 
-/* line 147, /Users/thaliamina/Documents/exercise-4/scss/components/main */
+/* line 152, /Users/thaliamina/Documents/exercise-4/scss/components/main */
 ul li input[type=checkbox]:checked ~ i:before {
   -webkit-transform: translate(2px, 0) rotate(45deg);
       -ms-transform: translate(2px, 0) rotate(45deg);
           transform: translate(2px, 0) rotate(45deg); }
 
-/* line 150, /Users/thaliamina/Documents/exercise-4/scss/components/main */
+/* line 155, /Users/thaliamina/Documents/exercise-4/scss/components/main */
 ul li input[type=checkbox]:checked ~ i:after {
   -webkit-transform: translate(-2px, 0) rotate(-45deg);
       -ms-transform: translate(-2px, 0) rotate(-45deg);
           transform: translate(-2px, 0) rotate(-45deg); }
 
 @-webkit-keyframes flipdown {
-  /* line 155, /Users/thaliamina/Documents/exercise-4/scss/components/main */
+  /* line 160, /Users/thaliamina/Documents/exercise-4/scss/components/main */
   0% {
     opacity: 0;
     -webkit-transform-origin: top center;
@@ -198,26 +203,26 @@ ul li input[type=checkbox]:checked ~ i:after {
     -webkit-transform: rotateX(-90deg);
             transform: rotateX(-90deg); }
 
-  /* line 160, /Users/thaliamina/Documents/exercise-4/scss/components/main */
+  /* line 165, /Users/thaliamina/Documents/exercise-4/scss/components/main */
   5% {
     opacity: 1; }
 
-  /* line 163, /Users/thaliamina/Documents/exercise-4/scss/components/main */
+  /* line 168, /Users/thaliamina/Documents/exercise-4/scss/components/main */
   80% {
     -webkit-transform: rotateX(8deg);
             transform: rotateX(8deg); }
 
-  /* line 166, /Users/thaliamina/Documents/exercise-4/scss/components/main */
+  /* line 171, /Users/thaliamina/Documents/exercise-4/scss/components/main */
   83% {
     -webkit-transform: rotateX(6deg);
             transform: rotateX(6deg); }
 
-  /* line 169, /Users/thaliamina/Documents/exercise-4/scss/components/main */
+  /* line 174, /Users/thaliamina/Documents/exercise-4/scss/components/main */
   92% {
     -webkit-transform: rotateX(-3deg);
             transform: rotateX(-3deg); }
 
-  /* line 172, /Users/thaliamina/Documents/exercise-4/scss/components/main */
+  /* line 177, /Users/thaliamina/Documents/exercise-4/scss/components/main */
   100% {
     -webkit-transform-origin: top center;
             transform-origin: top center;
@@ -225,7 +230,7 @@ ul li input[type=checkbox]:checked ~ i:after {
             transform: rotateX(0deg); } }
 
 @keyframes flipdown {
-  /* line 155, /Users/thaliamina/Documents/exercise-4/scss/components/main */
+  /* line 160, /Users/thaliamina/Documents/exercise-4/scss/components/main */
   0% {
     opacity: 0;
     -webkit-transform-origin: top center;
@@ -233,26 +238,26 @@ ul li input[type=checkbox]:checked ~ i:after {
     -webkit-transform: rotateX(-90deg);
             transform: rotateX(-90deg); }
 
-  /* line 160, /Users/thaliamina/Documents/exercise-4/scss/components/main */
+  /* line 165, /Users/thaliamina/Documents/exercise-4/scss/components/main */
   5% {
     opacity: 1; }
 
-  /* line 163, /Users/thaliamina/Documents/exercise-4/scss/components/main */
+  /* line 168, /Users/thaliamina/Documents/exercise-4/scss/components/main */
   80% {
     -webkit-transform: rotateX(8deg);
             transform: rotateX(8deg); }
 
-  /* line 166, /Users/thaliamina/Documents/exercise-4/scss/components/main */
+  /* line 171, /Users/thaliamina/Documents/exercise-4/scss/components/main */
   83% {
     -webkit-transform: rotateX(6deg);
             transform: rotateX(6deg); }
 
-  /* line 169, /Users/thaliamina/Documents/exercise-4/scss/components/main */
+  /* line 174, /Users/thaliamina/Documents/exercise-4/scss/components/main */
   92% {
     -webkit-transform: rotateX(-3deg);
             transform: rotateX(-3deg); }
 
-  /* line 172, /Users/thaliamina/Documents/exercise-4/scss/components/main */
+  /* line 177, /Users/thaliamina/Documents/exercise-4/scss/components/main */
   100% {
     -webkit-transform-origin: top center;
             transform-origin: top center;
